@@ -35,12 +35,12 @@ app.use(express.static(__dirname + '/public'));
 //     next();
 // });
 
-app.use((request, response, next) => {
-    response.render('maintenance.hbs', {
-        title: 'Index'
-    });
-    // next();
-});
+// app.use((request, response, next) => {
+//     response.render('maintenance.hbs', {
+//         title: 'Index'
+//     });
+//     // next();
+// });
 
 app.get('/', (request, response) => {
     response.render('index.hbs', {
